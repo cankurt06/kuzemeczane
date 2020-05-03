@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08962D70-A629-40AD-88AD-1E5E45D0353B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KuzemEczaneOtomasyonu</RootNamespace>
+    <AssemblyName>KuzemEczaneOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_ltp_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ayarlar_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar_form.Designer.cs">
+      <DependentUpon>ayarlar_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastalar_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastalar_form.Designer.cs">
+      <DependentUpon>hastalar_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_ekle_duzenle_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hasta_ekle_duzenle_form.Designer.cs">
+      <DependentUpon>hasta_ekle_duzenle_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilac_ekle_duzenle_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilac_ekle_duzenle_form.Designer.cs">
+      <DependentUpon>ilac_ekle_duzenle_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilac_fiyat_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilac_fiyat_ekle.Designer.cs">
+      <DependentUpon>ilac_fiyat_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilac_stok_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilac_stok_ekle.Designer.cs">
+      <DependentUpon>ilac_stok_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilac_stok_fiyat_bilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilac_stok_fiyat_bilgisi.Designer.cs">
+      <DependentUpon>ilac_stok_fiyat_bilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici_ekle_duzenle_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanici_ekle_duzenle_form.Designer.cs">
+      <DependentUpon>kullanici_ekle_duzenle_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginKullanici.cs" />
+    <Compile Include="odemeler_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odemeler_form.Designer.cs">
+      <DependentUpon>odemeler_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odeme_duzenle_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odeme_duzenle_form.Designer.cs">
+      <DependentUpon>odeme_duzenle_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satis_ekle_duzenle_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis_ekle_duzenle_form.Designer.cs">
+      <DependentUpon>satis_ekle_duzenle_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilaclar_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilaclar_form.Designer.cs">
+      <DependentUpon>ilaclar_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilar_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicilar_form.Designer.cs">
+      <DependentUpon>kullanicilar_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satis_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis_form.Designer.cs">
+      <DependentUpon>satis_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sifreleme.cs" />
+    <EmbeddedResource Include="ayarlar_form.resx">
+      <DependentUpon>ayarlar_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastalar_form.resx">
+      <DependentUpon>hastalar_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hasta_ekle_duzenle_form.resx">
+      <DependentUpon>hasta_ekle_duzenle_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilaclar_form.resx">
+      <DependentUpon>ilaclar_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilac_ekle_duzenle_form.resx">
+      <DependentUpon>ilac_ekle_duzenle_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilac_fiyat_ekle.resx">
+      <DependentUpon>ilac_fiyat_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilac_stok_ekle.resx">
+      <DependentUpon>ilac_stok_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilac_stok_fiyat_bilgisi.resx">
+      <DependentUpon>ilac_stok_fiyat_bilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicilar_form.resx">
+      <DependentUpon>kullanicilar_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanici_ekle_duzenle_form.resx">
+      <DependentUpon>kullanici_ekle_duzenle_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odemeler_form.resx">
+      <DependentUpon>odemeler_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odeme_duzenle_form.resx">
+      <DependentUpon>odeme_duzenle_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="satis_ekle_duzenle_form.resx">
+      <DependentUpon>satis_ekle_duzenle_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis_form.resx">
+      <DependentUpon>satis_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_ltp_icon.ico" />
+    <Content Include="medicine_JGN_icon.ico" />
+    <None Include="Resources\clipboard-search-symbol%281%29.png" />
+    <None Include="Resources\clipboard-search-symbol.png" />
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\payment-method.png" />
+    <None Include="Resources\hasta_sec1.png" />
+    <None Include="Resources\hasta_sec.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\worker-loading-boxes.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\add%281%29.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
